@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+video{
+	width: 100vw;
+	position: fixed;
+	top: 0;
+}
+
+.container {
+  width: 27.1875rem;
+	height: 10.3125rem;
+	/* padding: 30px; */
+	/* border: 1px solid black; */
+  
+  font-size: 0.9375rem;
+	background-color: white;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 10vh auto;
+	/* opacity: 0.9; */
+}
+
+
+p {
+  /* margin-top: 20px; */
+  /* margin-left: 38px; */
+	margin: 11px 10px;
+}
+
+
+
+input {
+  margin-right: 20px;
+	height: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.submit {
+  text-align: center;
+}
+
+#submit {
+  background-color: #00c3ff;
+	border: #00C3FF;
+  width: 200px;
+	height: 35px;
+	border-radius: 5px;
+  font-size:20px;
+  cursor: pointer;
+	/* margin-top: 10px; */
+	/* margin-left: -20px; */
+	margin: 4px auto;
+}
+
+.red {
+  color: red;
+}
+
+/* footer */
+footer{
+	font-size: 12px;
+	position: fixed;
+	bottom: 2vh;
+	left: 45vw;
+	text-align: center;
+}

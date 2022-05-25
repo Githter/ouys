@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>《原神》</title>
+		<link rel="stylesheet" type="text/css" href="./css/register.css">
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+		<video autoplay="autoplay" muted="muted" loop="loop" src="./images/3e78e80.mp4"></video>
+		<div class="container">
+			<div class="content">
+				<form action="" onsubmit="return false">
+					<p>
+						<label for="tel">手机号码：</label>
+						<input type="text" id="tel" onblur="telCheck()">
+						<span class="tel">请输入11位手机号码</span>
+					</p>
+					<p>
+						&emsp;&emsp;<label for="pwd">密码：</label>
+						<input type="password" id="pwd" onblur="pwdCheck()">
+						<span class="pwd">请输入6-12位密码</span>
+					</p>
+					<p>
+						<label for="pwd1">密码确认：</label>
+						<input type="password" id="pwd1" onblur="pwdSure()">
+						<span class="pwd1">请再次输入密码</span>
+					</p>
+					<p class="submit">
+						<input type="button" onclick="sub()" id="submit" value="注册">
+					</p>
+				</form>
+			</div>
+	<footer>版权所有 @19060614-陈润春</footer>
+
+		</div>
+
+
+		<script src="./jquery-3.3.1.js"></script>
+		<script>
+			function sub() {
+				//如果全部输入正确返回成功  输入错误则输出提示
+				if (telCheck() && pwdCheck() && pwdSure()) {
+					// alert('提交成功');
+					window.location.href = "./login.html";
+				} else {
+					alert('你的输入有误，请按要求输入后再提交');
+				}
+			}
+
+			//验证手机号码
+			function telCheck(str) {
+				let reg = /^\d{11}$/;
+				let tel = $("#tel").val();
+				if (!reg.test(tel) || tel == '') {
+					$(".tel").html("<span class='red'>请输入11位手机号码</span>")
+					return false;
+				} else {
+					$(".tel").text('√');
+					return true;
+				}
+			}
+
+			//验证密码字段
+			function pwdCheck(str) {
+				let reg = /^[\s\S]{6,12}/;
+				let pwd = $("#pwd").val();
+				if (!reg.test(pwd) || pwd == '') {
+					$(".pwd").html("<span class='red'>请输入6-12位密码</span>")
+					return false;
+				} else {
+					$(".pwd").text('√');
+					return true;
+				}
+			}
+
+			//确认密码
+			function pwdSure() {
+				if ($("#pwd").val() === $("#pwd1").val()) {
+					$(".pwd1").text('√');
+					return true;
+				} else {
+					$(".pwd1").html("<span class='red'>两次密码输入不一致</span>")
+					return false;
+				}
+			}
+		</script>
+
+
+	</body>
+
+</html>

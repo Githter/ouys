@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+	background-image: url(../images/keli.png);
+}
+
+.container {
+  width: 27.1875rem;
+	height: 10.3125rem;
+	/* padding: 30px; */
+	/* border: 1px solid black; */
+  
+  font-size: 0.9375rem;
+	/* background-color: white; */
+	background-image: url();
+	border-radius: 5px;
+	position: fixed;
+	margin: 30vh 10vw;
+	/* opacity: 0.9; */
+}
+
+
+p {
+  /* margin-top: 20px; */
+  /* margin-left: 38px; */
+	margin: 11px 10px;
+}
+
+
+
+input {
+  margin-right: 20px;
+	height: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.submit {
+  text-align: center;
+}
+
+#submit {
+  background-color: #00c3ff;
+	border: #00C3FF;
+  width: 200px;
+	height: 35px;
+	border-radius: 5px;
+  font-size:20px;
+  cursor: pointer;
+	/* margin-top: 10px; */
+	/* margin-left: -20px; */
+	margin: 4px auto;
+}
+
+.red {
+  color: red;
+}
