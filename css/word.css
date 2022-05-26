@@ -1,25 +1,26 @@
 body {
-  background-image: url(../images/mengde_logo.png);
-  background-repeat: repeat-x;
+  box-sizing: border-box;
 }
 
+/* ----------取消滑动显示---------- */
 ::-webkit-scrollbar {
   display: none;
 }
 
+/* ----------视差部分---------- */
 #container {
   width: 100vw;
   height: auto;
+  margin-top: -5vh;
 }
 
 section {
-  height: 100vh;
+  height: 115vh;
   /* background-color: #c4cbcf; */
   color: #fff;
   font-size: 3vh;
   display: flex;
   overflow: hidden;
-
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -35,6 +36,8 @@ section {
   user-select: none;
   cursor: default;
 }
+
+
 
 #img1 {
   background-image: url(../images/word1.jpg);

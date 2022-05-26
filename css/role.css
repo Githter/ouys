@@ -1,18 +1,86 @@
-body {
-  background-image: url(../images/liyue1.jpg);
+*{
+  padding: 0;
+  margin: 0;
 }
 
+/* ----------取消滑动显示---------- */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ----------背景轮播---------- */
+.ban {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto 0 auto;
+  position: fixed;
+  /* border: 1px solid rgb(0 0 0 / 0); */
+}
+
+.ban_one {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  /* border: 1px solid black; */
+}
+
+.ban_one img {
+  width: 100vw;
+}
+
+img.lb {
+	position: absolute;
+	opacity: 0;
+	animation: Simg 12s infinite;
+	width: 100vw;
+}
+
+@keyframes Simg {
+	0% {
+		opacity: 0
+	}
+
+	25% {
+		opacity: 1
+	}
+
+	40% {
+		opacity: 1
+	}
+
+	90% {
+		opacity: 0
+	}
+}
+
+img:nth-child(1) {
+	animation-delay: 0s
+}
+
+img:nth-child(2) {
+	animation-delay: 3s
+}
+
+img:nth-child(3) {
+	animation-delay: 6s
+}
+
+img:nth-child(4) {
+	animation-delay: 9s
+}
+
+/* ----------点按切换---------- */
 .slide {
   position: relative;
   margin: 0 auto;
-  width: 99vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   font-family: Arial;
   color: #fff;
   overflow: hidden;
   /* border: 1px solid black; */
-
 }
 
 .slide ul {
@@ -28,6 +96,7 @@ body {
   height: 100vh;
   list-style: none;
   line-height: 500px;
+  /* border: 1px saddlebrown solid; */
   font-size: 1vw;
 }
 
@@ -38,53 +107,61 @@ body {
 .slide li:nth-child(1) {
   /* background-color: #9fa8ef; */
   background-image: url(../images/qin.png);
+  background-size: 100vw;
 }
 
 .slide li:nth-child(2) {
   /* background-color: #ef9fb1; */
   background-image: url(../images/babala.png);
+  background-size: 100vw;
 }
 
 .slide li:nth-child(3) {
   /* background-color: #9fefc3; */
   background-image: url(../images/anbo.png);
-
+  background-size: 100vw;
 }
 
 .slide li:nth-child(4) {
   /* background-color: #9fefc3; */
   background-image: url(../images/xiao.png);
+  background-size: 100vw;
 }
 
 .slide li:nth-child(5) {
   /* background-color: #9fefc3; */
   background-image: url(../images/ningguang.png);
+  background-size: 100vw;
 }
 
 .slide li:nth-child(6) {
   /* background-color: #9fa8ef; */
   background-image: url(../images/yanfei.png);
+  background-size: 100vw;
 }
 
 .slide li:nth-child(7) {
   /* background-color: #ef9fb1; */
   background-image: url(../images/xiangling.png);
+  background-size: 100vw;
 }
 
 .slide li:nth-child(8) {
   /* background-color: #9fefc3; */
   background-image: url(../images/beidou.png);
-
+  background-size: 100vw;
 }
 
 .slide li:nth-child(9) {
   /* background-color: #9fefc3; */
   background-image: url(../images/hutao.png);
+  background-size: 100vw;
 }
 
 .slide li:nth-child(10) {
   /* background-color: #9fefc3; */
   background-image: url(../images/shenhe.png);
+  background-size: 100vw;
 }
 
 .slide input[name="button"] {
@@ -224,4 +301,12 @@ body {
 
 #button10:checked~label[for="button10"] {
   background: rgb(255, 255, 255);
+}
+
+footer{
+  height: 3vh;
+  position: absolute;
+  text-align: center;
+  margin: 1vh auto 1vh auto;
+  left: 45%;
 }

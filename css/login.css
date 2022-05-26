@@ -1,22 +1,24 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
 }
 
-body{
+body {
 	background-image: url(../images/keli.png);
+	background-color: #d84e24;
 }
 
 .container {
-  width: 27.1875rem;
+	width: 27.1875rem;
 	height: 10.3125rem;
 	/* padding: 30px; */
 	/* border: 1px solid black; */
-  
-  font-size: 0.9375rem;
-	/* background-color: white; */
-	background-image: url();
+	box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 35%);
+
+	font-size: 0.9375rem;
+	background-color: rgb(234, 241, 236);
+	/* background-image: url(../images/paimeng.png); */
 	border-radius: 5px;
 	position: fixed;
 	margin: 30vh 10vw;
@@ -25,39 +27,45 @@ body{
 
 
 p {
-  /* margin-top: 20px; */
-  /* margin-left: 38px; */
+	/* margin-top: 20px; */
+	/* margin-left: 38px; */
 	margin: 11px 10px;
 }
 
 
 
 input {
-  margin-right: 20px;
+	margin-right: 20px;
 	height: 20px;
 }
 
 .title {
-  text-align: center;
+	text-align: center;
 }
 
 .submit {
-  text-align: center;
+	text-align: center;
 }
 
 #submit {
-  background-color: #00c3ff;
+	background-color: #00c3ff;
 	border: #00C3FF;
-  width: 200px;
+	width: 200px;
 	height: 35px;
 	border-radius: 5px;
-  font-size:20px;
-  cursor: pointer;
+	font-size: 20px;
+	cursor: pointer;
 	/* margin-top: 10px; */
 	/* margin-left: -20px; */
 	margin: 4px auto;
+	/* filter: blur(8px); */
+	transition: .3s;
+}
+
+#submit:hover {
+	box-shadow: 0px 1px 7px 0px rgb(0 0 0 / 35%);
 }
 
 .red {
-  color: red;
+	color: red;
 }
